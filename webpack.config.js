@@ -37,6 +37,10 @@ module.exports = {
                     },
                 }],
                 type: 'javascript/auto'
+            },
+            {
+                test: /\.csv$/,
+                use: 'csv-loader'
             }
         ]
     }
