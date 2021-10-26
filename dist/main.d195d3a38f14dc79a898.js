@@ -75,16 +75,6 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
-/***/ "./assets/test.csv":
-/*!*************************!*\
-  !*** ./assets/test.csv ***!
-  \*************************/
-/***/ ((module) => {
-
-eval("module.exports = [[\"1997\",\"Ford\",\"E350\",\"ac, abs, moon\",\"3000.00\"],[\"1999\",\"Chevy\",\"Venture «Extended Edition»\",\"\",\"4900.00\"],[\"1996\",\"Jeep\",\"Grand Cherokee\",\"MUST SELL! air, moon roof, loaded\",\"4799.00\"]]\n\n//# sourceURL=webpack:///./assets/test.csv?");
-
-/***/ }),
-
 /***/ "./assets/webpack-logo.png":
 /*!*********************************!*\
   !*** ./assets/webpack-logo.png ***!
@@ -172,17 +162,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./Post.js":
-/*!*****************!*\
-  !*** ./Post.js ***!
-  \*****************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Post\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title, img) {\r\n        this.title = title;\r\n        this.date = new Date();\r\n        this.img = img;\r\n        console.log(img);\r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            title: this.title,\r\n            date: this.date.toJSON(),\r\n            img: this.img\r\n        });\r\n    }\r\n\r\n    get uppercaseTitle() {\r\n        return this.title.toUpperCase()\r\n    }\r\n}\n\n//# sourceURL=webpack:///./Post.js?");
-
-/***/ }),
-
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -190,7 +169,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n/* harmony import */ var _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/webpack-logo.png */ \"./assets/webpack-logo.png\");\n/* harmony import */ var _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_test_csv__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/test.csv */ \"./assets/test.csv\");\n/* harmony import */ var _assets_test_csv__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_test_csv__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n\r\n// import json from './assets/json';\r\n\r\n\r\n\r\n\r\nconst post = new _Post__WEBPACK_IMPORTED_MODULE_0__.Post('test', (_assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_1___default()));\r\n\r\nconsole.log('Post to string: ', post.toString());\r\n\r\n// console.log('JSON:', json);\r\nconsole.log('CSV:', (_assets_test_csv__WEBPACK_IMPORTED_MODULE_2___default()));\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var src_models_Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/models/Post */ \"./models/Post.js\");\n/* harmony import */ var _assets_webpack_logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/webpack-logo */ \"./assets/webpack-logo.png\");\n/* harmony import */ var _assets_webpack_logo__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_webpack_logo__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n\r\n// import json from './assets/json';\r\n\r\n// import CSV from './assets/test.csv';\r\n\r\n\r\nconst post = new src_models_Post__WEBPACK_IMPORTED_MODULE_0__.Post('test', (_assets_webpack_logo__WEBPACK_IMPORTED_MODULE_1___default()));\r\n\r\nconsole.log('Post to string: ', post.toString());\r\n\r\n// console.log('JSON:', json);\r\n// console.log('CSV:', CSV);\r\n\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./models/Post.js":
+/*!************************!*\
+  !*** ./models/Post.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Post\": () => (/* binding */ Post)\n/* harmony export */ });\nclass Post {\r\n    constructor(title, img) {\r\n        this.title = title;\r\n        this.date = new Date();\r\n        this.img = img;\r\n        console.log(img);\r\n    }\r\n\r\n    toString() {\r\n        return JSON.stringify({\r\n            title: this.title,\r\n            date: this.date.toJSON(),\r\n            img: this.img\r\n        });\r\n    }\r\n\r\n    get uppercaseTitle() {\r\n        return this.title.toUpperCase()\r\n    }\r\n}\n\n//# sourceURL=webpack:///./models/Post.js?");
 
 /***/ }),
 
