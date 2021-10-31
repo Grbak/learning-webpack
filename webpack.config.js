@@ -23,7 +23,8 @@ module.exports = {
     optimization: {
         splitChunks: {
             chunks: 'all'
-        }
+        },
+        runtimeChunk: 'single'
     },
     devServer: {
         port: 4200
