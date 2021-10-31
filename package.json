@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch"
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,8 @@
     "html-webpack-plugin": "^5.4.0",
     "style-loader": "^3.3.0",
     "webpack": "^5.58.2",
-    "webpack-cli": "^4.9.0"
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.4.0"
   },
   "dependencies": {
     "jquery": "^3.6.0",
