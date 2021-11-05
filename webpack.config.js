@@ -54,6 +54,7 @@ module.exports = {
             filename: filename('css')
         })
     ],
+    devtool: isDev ? 'source-map' : false,
     module: {
         rules: [
             {
