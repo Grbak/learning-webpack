@@ -31,7 +31,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.js', '.json', '.png'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
             'src': path.resolve(__dirname, 'src')
         }
@@ -101,7 +101,17 @@ module.exports = {
                     presets: ['@babel/preset-env', '@babel/preset-react']
                   }
                 }
-              }
+            },
+            {
+                test: /\.ts?x$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: "babel-loader",
+                  options: {
+                    presets: ['@babel/preset-env', '@babel/preset-typescript', '@babel/preset-react']
+                  }
+                }
+            }
         ]
     }
 }

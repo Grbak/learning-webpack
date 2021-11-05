@@ -30,6 +30,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
@@ -47,6 +48,7 @@
     "webpack-dev-server": "^4.4.0"
   },
   "dependencies": {
+    "@types/react": "^17.0.34",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
