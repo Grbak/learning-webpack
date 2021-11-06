@@ -48,7 +48,8 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './index.html'
+            template: './index.html',
+            favicon: './assets/webpack-logo.ico'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
